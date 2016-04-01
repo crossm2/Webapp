@@ -1,0 +1,7 @@
+[user]
+	name = Marlie
+	email = crossm2@seattleu.edu
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
