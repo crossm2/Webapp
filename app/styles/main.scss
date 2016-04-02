@@ -36,6 +36,13 @@ h1 {
 .header {
   border-bottom: 1px solid #e5e5e5;
 
+  li a {
+    color: green;
+  }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: purple;
+}
+
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
