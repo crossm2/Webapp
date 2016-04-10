@@ -9,5 +9,12 @@ $(document).ready(function () {
         $('li').removeClass();
         $(this).parent().addClass('active');
     });
+
+    $('.btn-success').click(function () {
+        $('body').css({
+            'background-color': 'white',
+            'color': '#7DE718'
+        });
+    });
 });
 //# sourceMappingURL=main.js.map

@@ -1,8 +1,24 @@
+@mixin colors($background-color,$color) {
+    background-color: $background-color;
+    color: $color;
+  }
+
+body {
+  @include colors(black,orange);
+}
+/*
 body {
     color: #7DE718;
 }
+*/
 h1 {
   color: #7DE718;
+}
+
+/*adding border radius mixin*/
+.container .jumbotron {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(150px);
 }
 
 /*Nesting marketing color changes*/
@@ -40,12 +56,6 @@ h1 {
   background-color: $brand-danger;
 }
 
-
-/*adding border radius mixin*/
-.container .jumbotron {
-    @include border-top-radius(0px);
-    @include border-bottom-radius(50px);
-}
 
 
   /* Space out content a bit */

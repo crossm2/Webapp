@@ -9,4 +9,11 @@ $('li > a').click(function() {
     $(this).parent().addClass('active');
 });
 
+$('.btn-success').click(function() {
+    $('body').css({
+        'background-color': 'white',
+        'color': '#7DE718',
+    });
+});
+
 });
